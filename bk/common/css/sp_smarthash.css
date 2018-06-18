@@ -1,0 +1,257 @@
+@charset "Shift_JIS";
+
+/* SmartHash */
+
+
+.smarthash li a {
+  display: block;
+}
+
+.smarthash li .multiple {
+  position: relative;
+}
+
+.smarthash li .multiple:after {
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+  top: 5px;
+  right: 5px;
+  background: url(../../img/multiple.png) no-repeat right top;
+  background-size: 22px auto;
+  content: "";
+  position: absolute;
+}
+
+.smarthash li p {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.smarthash li .description {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+  display: block;
+}
+
+.smarthash li .hash_tag {
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #ddd;
+  display: block;
+}
+
+.smarthash li img {
+  height: auto;
+  max-width: 100%;
+}
+
+.smarthash_zoom {
+  display: none;
+}
+
+/* zoom */
+
+.data {
+  margin: 0;
+  width: 100%;
+  clear: both;
+  float: none;
+  overflow: visible;
+}
+
+.data_head {
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.dateBox span {
+  display: block;
+}
+
+.data a {
+  color: #000;
+}
+
+.dateBox a:before {
+  font-family: FontAwesome;
+  color: #ccc;
+  margin-right: 5px;
+  content: "\f007";
+}
+
+.dateBox span:before {
+  font-family: FontAwesome;
+  color: #ccc;
+  margin-right: 5px;
+  content: "\f017";
+}
+
+.appOoen {
+  text-align: right;
+  top: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+}
+
+.appOoen a {
+  border-radius: 2px;
+  font-size: 75%;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  display: inline-block;
+  background: #333;
+}
+
+.data dt.imgBox {
+  width: 100%;
+  position: relative;
+}
+
+.data dt.imgBox img,
+.data dt.imgBox video {
+  width: 100%;
+}
+
+.data dd {
+  word-break: break-all;
+  padding: 10px;
+}
+
+.data .commentBox {
+  font-size: 12px;
+}
+
+.data .item_name {
+  margin: 10px 0 10px 0;
+}
+
+.data .item_img {
+  margin: 10px 0 10px 0;
+}
+
+.data .item_img img {
+  height: auto;
+  max-width: 100%;
+}
+
+.data .item_url {
+  margin: 20px 0 10px 0;
+}
+
+.data .item_url a {
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 20px auto;
+  padding: 8px 40px;
+  width: 100px;
+  display: block;
+  background-color: #c72425;
+}
+
+#cboxWrapper #cboxClose {
+  font-size: 24px;
+  color: #fff;
+  text-indent: 0;
+  top: -35px;
+}
+
+/* carousel */
+
+.carousel_wrapper dt.imgBox {
+  padding-right: 30px;
+  width: 100%;
+}
+
+.carousel_wrapper dd {
+  ;
+}
+
+.carousel_wrapper dt.imgBox .carousel {
+  width: 100%;
+  display: block;
+}
+
+.imgBox .carousel_item {
+  width: 100%;
+  display: table;
+}
+
+.imgBox .carousel_item p {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  display: table-cell;
+}
+
+.imgBox .carousel_item p img,
+.imgBox .carousel_item p video {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.owl-buttons .owl-prev,
+.owl-buttons .owl-next {
+  top: 50%;
+  position: absolute;
+}
+
+.owl-buttons .owl-prev {
+  left: 0;
+}
+
+.owl-buttons .owl-next {
+  right: 0;
+}
+
+.owl-buttons .owl-prev:after,
+.owl-buttons .owl-next:after {
+  font: normal normal normal 40px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: -30px;
+  padding: 10px;
+  width: 30px;
+  height: 60px;
+  display: block;
+}
+
+.owl-buttons .owl-prev:hover:after,
+.owl-buttons .owl-next:hover:after {
+  opacity: 0.7;
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+.owl-buttons .owl-prev:after {
+  content: "\f104";
+}
+
+.owl-buttons .owl-next:after {
+  content: "\f105";
+}
+

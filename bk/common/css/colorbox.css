@@ -1,0 +1,165 @@
+@charset "Shift_JIS";
+
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#cboxWrapper {
+
+}
+
+#cboxOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft { clear: left; }
+#cboxContent { position: relative; }
+
+#cboxLoadedContent {
+  -webkit-overflow-scrolling: touch;
+  
+}
+
+#cboxTitle { margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor: pointer; }
+
+.cboxPhoto {
+  -ms-interpolation-mode: bicubic;
+  margin: auto;
+  border: 0;
+  max-width: none;
+  display: block;
+  float: left;
+}
+
+.cboxIframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay { background:url() no-repeat right top #000; }
+
+#colorbox { 
+outline: 0;
+max-width: none;
+}
+
+#cboxContent {
+  overflow: visible;
+}
+
+.cboxIframe {  }
+
+#cboxError {
+  padding: 50px;
+}
+
+#cboxLoadedContent {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+#cboxLoadingGraphic{background:url(../../img/loading.gif) no-repeat center center;}
+#cboxLoadingOverlay {  }
+
+#cboxTitle {
+  color: #000;
+  top: -22px;
+  left: 0;
+  position: absolute;
+}
+
+#cboxCurrent {
+  text-indent: -9999px;
+  top: -22px;
+  right: 205px;
+  position: absolute;
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+  text-indent: -9999px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  top: -20px;
+  background: url(../../img/close.png) no-repeat 0 0;
+  overflow: visible;
+  position: absolute;
+}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active { outline: 0; }
+
+#cboxPrevious {
+  right: 44px;
+  background-position: 0px 0px;
+}
+
+#cboxPrevious:hover { background-position: 0px -25px; }
+
+#cboxNext {
+  right: 22px;
+  background-position: -25px 0px;
+}
+
+#cboxNext:hover { background-position: -25px -25px; }
+
+#cboxClose {
+  right: 0;
+  background-position: -50px 0px;
+}
+
+#cboxClose:hover { background-position: -50px -25px; }
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious { right: 66px; }
+
+.cboxSlideshow_on #cboxSlideshow {
+  right: 44px;
+  background-position: -75px -25px;
+}
+
+.cboxSlideshow_on #cboxSlideshow:hover { background-position: -100px -25px; }
+
+.cboxSlideshow_off #cboxSlideshow {
+  right: 44px;
+  background-position: -100px 0px;
+}
+
+.cboxSlideshow_off #cboxSlideshow:hover { background-position: -75px -25px; }
